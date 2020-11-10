@@ -1,5 +1,7 @@
 <h1>Customers</h1>
 
-<% @customers.each do |c| %>
-  <h1><%= link_to c.full_name, c %></h1>
-<% end %>
+<div class="columns is-multiline">
+  <% @customers.each do |c|%>
+    <%= render c %>
+  <% end %>
+</div>
